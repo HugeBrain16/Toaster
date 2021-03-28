@@ -60,4 +60,8 @@ async def info(ctx):
 
 	await ctx.send(embed=emb)
 
+@client.command()
+async def invite(ctx):
+	await ctx.send('https://discord.com/api/oauth2/authorize?client_id=825518085820907520&permissions=8&scope=bot')
+
 client.run(_cfg['bot']['token'])
